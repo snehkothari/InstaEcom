@@ -6,7 +6,7 @@ $password=$_POST["password"];
 $address=$_POST["ADDRESS"];
 $buyer=$_POST["BS"];
 // Create connection
-$conn = mysqli_connect("localhost", "id7509572_root", "sidsneh", "id7509572_mydb"); 
+$conn = mysqli_connect("localhost", "id7509572_root", "**********", "id7509572_mydb"); 
 // Check connection
 if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
@@ -54,7 +54,7 @@ else
     <html>
         <h1>Welcome  <?php echo $name ?></h1>
  <?php  
-$connect = mysqli_connect("localhost", "id7509572_root", "sidsneh", "id7509572_mydb");    
+$connect = mysqli_connect("localhost", "id7509572_root", "********", "id7509572_mydb");    
  if(isset($_POST["insert"]))  
  {  
       $file = addslashes(file_get_contents($_FILES["image"]["tmp_name"]));  
